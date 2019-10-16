@@ -1,12 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi primera página web</title>
-</head>
-<body>
-    
-</body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*HEADER
+        */
+        header{
+            background-color: blue;
+            padding-top: 20PX;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                            }
+        header ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        header li{
+            margin-right: 10 px;
+                }
+        header a{
+                    color: chartreuse;
+                                }
+        main{
+
+                }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!--HEADER-->
+      <header>
+        <a href="/">LOGO</a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Quienes somos</a>
+            </li>
+            <li>
+              <a href="#">Portafolio</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--MAIN-->
+      <main>
+        <!--INICIO-->
+        <section>
+          <h2>INICIO</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            perspiciatis quaerat reprehenderit quis saepe alias recusandae ea.
+            Animi aperiam nostrum distinctio incidunt rerum minima dolorum
+            officiis, numquam maxime reiciendis dolore.
+          </p>
+          <figure>
+            <img
+              src="/images/programacion.jpg"
+              alt="inicio"
+              height="300px"
+              width="600px"
+            />
+          </figure>
+        </section>
+        <!--QUIENES SOMOS-->
+        <section>
+          <h2>QUIENES SOMOS</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            autem quos aspernatur delectus minus itaque ut placeat impedit
+            cupiditate esse laborum doloribus, veritatis necessitatibus numquam
+            quasi odio corporis, culpa consectetur!
+          </p>
+          <figure>
+            <img
+              src="./images/equipo.png"
+              alt="equipo"
+              height="300px"
+              width="600px"
+            />
+          </figure>
+        </section>
+        <!--PORTAFOLIO-->
+        <section>
+          <h2>PORTAFOLIO</h2>
+          <hr />
+          <P
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            dicta blanditiis quae debitis quibusdam cupiditate aut rerum
+            temporibus, illo accusamus nisi, vero, sapiente omnis nam alias
+            mollitia qui quam? Quibusdam.</P
+          >
+          <figure>
+            <img
+              src="./images/programa1.jpg"
+              alt="servicio 1"
+              width="80"
+              height="80"
+            />
+            <figcaption>Servicio 1</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/programa1.jpg"
+              alt="servicio 2"
+              width="80"
+              height="80"
+            />
+            <figcaption>Servicio 2</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/programa1.jpg"
+              alt="servicio 3"
+              width="80"
+              height="80"
+            />
+            <figcaption>Servicio 3</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./images/programa1.jpg"
+              alt="servicio 4"
+              width="80"
+              height="80"
+            />
+            <figcaption>Servicio 4</figcaption>
+          </figure>
+        </section>
+        <!--CONTACTO-->
+        <section>
+          <h2>CONTACTO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+            alias dolorum, ex culpa tenetur at voluptas repellendus beatae totam
+            inventore ab cum consectetur praesentium corrupti amet
+            necessitatibus nemo molestiae fugit!
+          </p>
+          <hr />
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+          <input type="text" placeholder="Teléfono">
+          <input type="text" placeholder="Email">
+          <textarea name="" id="" cols=100" rows="10"></textarea>
+          <button>Enviar</button>
+        </section>
+      </main>
+      <!--FOOTER-->
+      <footer></footer>
+    </div>
+  </body>
 </html>
