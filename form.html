@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <style>
+    input:focus {
+      outline: none;
+    }
+​
+    input:valid, 
+    select:valid {
+      border:1px solid green;
+    }
+​
+    input:invalid:focus, 
+    select:invalid:focus {
+      border:1px solid red;
+    }
+  </style>
+</head>
+​
+<body>
+  <!-- <form action="">
+        <input type="text">
+        <select name="" id="">
+            <option value="">Seleccionar el pais</option>
+            <option value="0">Perú</option>
+            <option value="1">Chile</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <progress></progress>
+        <label>Choose a browser from this list:
+            <input list="browsers" name="myBrowser" /></label>
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist>
+        <button>Enviar</button>
+​
+​
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+​
+        <label for="femenino">SEXO FEMENINO</label>
+        <input id="femenino" type="radio" name="sexo">
+        <label for="masculino">SEXO MASCULINO</label>
+        <input id="masculino" type="radio" name="sexo">
+    </form> -->
+​
+​
+  <form action="">
+    <div>
+      <label>
+        Nombre
+        <!-- <input 
+                    type="text" 
+                    required 
+                    minlength="4" 
+                    maxlength="12" 
+                    pattern="."> -->
+        <input 
+          type="text" 
+          required 
+          pattern="[A-Za-z]+" 
+        />
+      </label>
+      <label>
+        Apellido
+        <input 
+          type="text" 
+          required 
+          pattern="[A-Za-z]+"
+        />
+      </label>
+    </div>
+    <div>
+      <label>
+        Edad
+        <input type="number" required value="18" min="18" max="80">
+      </label>
+      <label>
+        Correo
+        <input type="email" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Password
+        <input type="password" required minlength="6" maxlength="12">
+      </label>
+      <label>
+        Confirmar Password
+        <input type="password" required minlength="6" maxlength="12">
+      </label>
+    </div>
+    <div>
+      <label>
+        Telefono
+        <input type="tel" required pattern="[0-9]+">
+      </label>
+      <label>
+        Pais
+        <select required>
+          <option value="">Seleccionar</option>
+          <option value="0">Perú</option>
+          <option value="1">Chile</option>
+          <option value="2">Bolivia</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label>
+        Fecha
+        <input type="date" required>
+      </label>
+    </div>
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpia</button>
+    </div>
+  </form>
+​
+ 
+</body>
+​
+</html>
